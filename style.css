@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  padding-inline: 1rem;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  margin-inline: auto;
+  margin-block: 6rem;
+  border-radius: 1.5rem;
+  min-width: 350px;
+  width: 100%;
+}
+.container .img-size, .container .container-img img.absolute-img, .container .container-img img.relative-img {
+  display: block;
+  max-width: 230px;
+  width: 100%;
+  margin-inline: auto;
+}
+.container .container-img {
+  position: relative;
+  top: -27%;
+  margin-top: 2rem;
+}
+.container .container-img img.absolute-img {
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .text-section {
+  padding-bottom: 3rem;
+  margin-top: -7rem;
+}
+.container .text-section h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: hsl(238, 29%, 16%);
+  margin-top: 2rem;
+  font-weight: 700;
+}
+.container .dropdown {
+  margin-inline: 1.5rem;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding-block: 1rem;
+}
+.container .dropdown .label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.container .dropdown .label .dropdown-label {
+  padding-bottom: 0.2rem;
+  margin-right: 1rem;
+}
+.container .hidden-dropdown {
+  display: none;
+}
+.container .dropdown-text:hover {
+  cursor: pointer;
+  color: hsl(14, 88%, 65%);
+}
+.container .dropdown-arrow {
+  transform: rotate(180deg);
+}
+.container .arrow-icon:hover {
+  cursor: pointer;
+}
+.container .bold-label {
+  color: hsl(238, 29%, 16%);
+  font-weight: bolder;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .container-img {
+    top: 0;
+    margin-top: 0;
+  }
+  .container .container-img img {
+    width: 100%;
+  }
+  .container .container-img .relative-img {
+    margin-top: 0;
+    min-width: 300px;
+  }
+  .container .text-section {
+    margin-top: 0;
+    padding-right: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
